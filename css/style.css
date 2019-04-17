@@ -1,0 +1,218 @@
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding-top: 4%;
+}
+
+.title {
+    display: flex;
+    flex-basis: 30%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.5rem;
+    color: rgba(133, 134, 136, 1);
+    text-align: left;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding-left: 9.5%;
+    align-items: center;
+}
+
+.title-color {
+    color: rgb(91, 66, 149);
+}
+
+.horizontal-list {
+    list-style: none;
+    /*убираем маркеры списка*/
+    margin: 0;
+    /*убираем верхнее и нижнее поле, равное 1em*/
+    padding-left: 0;
+    /*убираем левый отступ, равный 40px*/
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.menu-main {
+    width: 650px;
+    margin-left: 130px;
+}
+
+.item-link {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 13px;
+    color: rgb(69, 69, 69);
+    text-align: left;
+    line-height: 22px;
+    /* transition: color .3s;
+    transition: box-shadow 3s; */
+    /*убираем подчеркивание текста ссылок*/
+}
+
+.hover-underline:hover {
+    text-shadow: 0 0 .2px #333, 0 0 .2px #333;
+    border-bottom: 1px solid rgb(149, 149, 149);
+}
+
+.login-link:hover .login-icon {
+    color: rgb(100, 34, 255);
+}
+
+.login-link:hover {
+    transition: .3s;
+    text-shadow: 0 0 .2px #333, 0 0 .2px #333;
+}
+
+.navigation-menu {
+    flex-basis: 70%;
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+.login-link {
+    margin-left: 45px;
+}
+
+.login-icon {
+    color: rgb(88, 44, 126);
+}
+
+.sing-up-button {
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    background: linear-gradient(135deg, rgb(88, 44, 126), rgb(108, 125, 219));
+    text-align: center;
+}
+
+.sing-up-button:hover {
+    transition: .3s;
+    box-shadow: 0 5px 10px 0 rgb(97, 112, 198);
+}
+
+.sing-up-button .item-link {
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+    padding: 5px 18px;
+    color: white;
+    border-radius: inherit;
+    /* background-color: black; */
+}
+
+.language-selection-container {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.1% 145px 0;
+}
+
+.language-list-item {
+    /* margin-right: 5px; */
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 11px;
+    color: rgb(149, 149, 149);
+    text-align: left;
+}
+
+.language-link:hover {
+    text-shadow: 0 0 .2px #333, 0 0 .2px #333;
+    border-bottom: 1px solid rgb(149, 149, 149);
+}
+
+.language-list-item:not(:first-child):before {
+    content: " / ";
+    margin: 9px;
+}
+
+.intro-section {
+    /* margin-top: -3%; */
+    display: grid;
+    grid-template: 360px repeat(7, 1fr)/ 10% repeat(4, 1fr) 10%;
+    height: 550px;
+    width: 100%;
+    background-image: url(../assets/img/background-mount.jpg);
+    background-size: cover;
+    background-position: center 55%;
+}
+
+.first-section-block {
+    grid-area: 1 / 2 / 2 / 6;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-title {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: rgb(104, 104, 104);
+    text-align: center;
+}
+
+.section-subtitle {
+    margin: 1.1%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30px;
+    color: rgb(104, 104, 104);
+    text-align: center;
+}
+
+.color-salmon {
+    color: salmon;
+}
+.color-white{
+    color: white;
+}
+
+.buttons-item{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.15rem;
+    /* box-sizing: border-box; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(270deg, rgb(88, 44, 126), rgb(108, 125, 219));;
+    
+    /* padding: 0 10px; */
+    /* width: auto; */
+    height: 2em;
+    border-radius: 1em;
+    width: 2em;
+    text-align: center;
+}
+
+.login-account-button {
+    display: block;
+    /* width: 2em;
+    text-align: center; */
+}
+
+.account-buttons-list {
+    width: 400px;
+    justify-content: space-between;
+}
+
+.cread-accoun-button {
+    letter-spacing: .1em;
+    font-size: .9rem;
+    font-weight: bold;
+    width: 13.8em;
+    height: 3em;
+    border-radius: 1.5em;
+}
