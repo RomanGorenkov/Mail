@@ -116,7 +116,7 @@
     flex-basis: 40%;
     display: flex;
     justify-content: space-between;
-    margin: 1.1% 145px 0;
+    margin: 1.1% 9.5% 0;
 }
 
 .language-list-item {
@@ -140,11 +140,11 @@
 .intro-section {
     /* margin-top: -3%; */
     display: grid;
-    grid-template: 360px repeat(7, 1fr)/ 10% repeat(4, 1fr) 10%;
+    grid-template: 70% repeat(7, 1fr)/ 10% repeat(4, 1fr) 10%;
     height: 550px;
     width: 100%;
     background-image: url(../assets/img/background-mount.jpg);
-    background-size: cover;
+    background-size: covers;
     background-position: center 55%;
 }
 
@@ -204,8 +204,9 @@
 }
 
 .account-buttons-list {
-    width: 400px;
+    width: 19rem;
     justify-content: space-between;
+    margin: 50px;
 }
 
 .cread-accoun-button {
@@ -215,4 +216,18 @@
     width: 13.8em;
     height: 3em;
     border-radius: 1.5em;
+}
+
+.second-section-block{
+    grid-area: 1 / 6 / 2 / 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link{
+    display: block;
+    color: gray;
+    font-size: 1.5rem;
+    margin: .5em;
 }
