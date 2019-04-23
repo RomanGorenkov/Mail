@@ -1,8 +1,6 @@
 @font-face {
     font-family: 'Malaga Narrow OT Reg Italic';
     src: url(../assets/fonts/Malaga\ Narrow\ OT\ Reg\ Italic.otf);
-    /* font-weight: normal; */
-    /* font-style: normal; */
 }
 
 .text-decoration-none {
@@ -38,11 +36,8 @@
 
 .horizontal-list {
     list-style: none;
-    /*убираем маркеры списка*/
     margin: 0;
-    /*убираем верхнее и нижнее поле, равное 1em*/
     padding-left: 0;
-    /*убираем левый отступ, равный 40px*/
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -62,9 +57,6 @@
     color: rgb(69, 69, 69);
     text-align: left;
     line-height: 22px;
-    /* transition: color .3s;
-    transition: box-shadow 3s; */
-    /*убираем подчеркивание текста ссылок*/
 }
 
 .hover-underline:hover {
@@ -83,6 +75,7 @@
 
 .navigation-menu {
     flex-basis: 70%;
+    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-content: flex-end;
@@ -116,18 +109,17 @@
     padding: 5px 18px;
     color: white;
     border-radius: inherit;
-    /* background-color: black; */
 }
 
 .language-selection-container {
     flex-basis: 40%;
+    flex-grow: 1;
     display: flex;
     justify-content: space-between;
     margin: 1.1% 9.5% 0;
 }
 
 .language-list-item {
-    /* margin-right: 5px; */
     font-family: 'Titillium Web', sans-serif;
     font-size: 11px;
     color: rgb(149, 149, 149);
@@ -148,18 +140,11 @@
     margin-top: 4%;
     display: grid;
     grid-template: 16em 16em 4.3em 4.4em 7em 7.8em 2.8em / 9.5% 30.2% 3fr repeat(2, 3fr) 9.5%;
-    /* height: 50rem; */
     width: 100%;
-    /* background-image: url(../assets/img/background-mount.png);
-    background-size: contain;
-    background-position: center 125%;
-    background-size: inherit;
-    background-repeat: no-repeat; */
 }
 
 .first-section-block {
     grid-area: 1 / 2 / 3 / 6;
-    /* background-color: black; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -198,14 +183,10 @@
 .buttons-item {
     font-family: 'Titillium Web', sans-serif;
     font-size: 1.15rem;
-    /* box-sizing: border-box; */
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(270deg, rgb(88, 44, 126), rgb(108, 125, 219));
-    ;
-    /* padding: 0 10px; */
-    /* width: auto; */
     height: 2em;
     border-radius: 1em;
     width: 2em;
@@ -214,8 +195,6 @@
 
 .login-account-button {
     display: block;
-    /* width: 2em;
-    text-align: center; */
 }
 
 .account-buttons-list {
@@ -224,11 +203,15 @@
     width: 20rem;
     justify-content: space-between;
     align-content: center;
-    /* margin: 0px; */
     background-image: url(../assets/img/fake-lake.png);
     background-size: 32em;
     background-repeat: no-repeat;
     background-position: center 1em;
+}
+
+.buttons-item:hover{
+    transition: .3s;
+    box-shadow: 0 5px 10px 0 rgb(97, 112, 198);
 }
 
 .cread-accoun-button {
@@ -250,20 +233,23 @@
 
 .social-link-list {
     margin-top: -9.2em;
-    /* margin-left: -6.7em; */
 }
 
 .social-link {
     display: block;
     color: gray;
     font-size: 1.1rem;
+    line-height: 1em;
     margin: .57em;
+}
+
+.social-link:hover{
+    color: rgb(80,80,80);
 }
 
 .section-background {
     grid-area: 1/ 1/ 3 / 7;
     background: url(../assets/img/background-mount.png);
-    /* background-size: contain; */
     z-index: -1;
     background-position: center center;
     background-size: 100%;
@@ -274,7 +260,6 @@
     grid-area: 2 / 2 / 5 / 3;
     border-right: 1px solid rgb(149, 147, 147);
     z-index: -2;
-    /* background-color: aqua; */
 }
 
 .fourth-section-block {
@@ -285,7 +270,6 @@
 
 .fifth-section-block {
     grid-area: 4 / 2 / 5 / 6;
-    /* border-right: 1px solid gray;  */
     display: flex;
     z-index: -3;
 }
@@ -306,13 +290,8 @@
     justify-content: center;
     font-family: 'Titillium Web', sans-serif;
     color: rgb(149, 147, 147);
-    /* border-left: 1px solid gray; */
-    /* margin: 0 5%; */
 }
 
-.advantages:nth-child(2) {
-    /* border-right: 1px solid rgb(149, 147, 147); */
-}
 
 .advantages:nth-child(2)::after {
     position: absolute;
@@ -391,7 +370,6 @@
     letter-spacing: .01em;
     text-align: right;
     padding-right: 3%;
-    /* font-weight: bold; */
 }
 
 .seventh-section-description {
@@ -405,23 +383,28 @@
     width: 70%;
 }
 
-/* .seventh-section-block::after{
-    position: absolute;
-    bottom: 0;
-    right: -8.7%;
-    content: '';
-    display: block;
-    width: 150%;
-    height: .5px;
-    background: rgb(149, 147, 147);
-    z-index: 0;
-} */
-
 .eighth-section-block {
+    position: relative;
     grid-area: 7 / 3 / 8 / 6;
-    /* margin: 0 35% 0 28%; */
     display: flex;
     justify-content: center;
+}
+
+.eighth-section-border{
+    position: relative;
+    grid-area: 7 / 1 / 8 / 4;
+}
+
+.eighth-section-border::before{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: .5px;
+    background: rgb(149, 147, 147);
+    z-index: -2;
 }
 
 .eighth-section-content {
@@ -434,11 +417,11 @@
     border: 1px solid rgb(149, 147, 147);
     align-items: center;
     z-index: 1;
+    text-align: center;
+    background-color: white;
 }
 
 .partners-img {
-    /* object-fit:cover; */
-    /* display: block; */
     margin-left: 5%;
     margin: 2.5% 1.5% 3.1%;
     object-fit: cover;
@@ -447,14 +430,12 @@
 }
 
 .about-section{
-    /* background-color: rgb(244,244,244); */
     position: relative;
     background-image: url(../assets/img/NOT\ FOR\ USE!!!!!@1X.png);
     background-repeat: no-repeat;
     background-position: 77% 200%;
     background-size: contain;
     height: 35em;
-
 }
 
 .about-section::after{
@@ -487,31 +468,24 @@
     display: grid;
     grid-template: 10em 1fr / 6% 70% 1fr 2.7%;
     height: 26.5rem;
-    /* background-color: aqua; */
-
 }
 
 .first-about-block {
     display: flex;
     grid-area: 1 / 1 / 2 / 2;
-    /* justify-content: center; */
     align-items: flex-start;
-    /* padding-top: 1.2em; */
     padding-left: .27em;
-    /* background-color: aquamarine; */
 }
 
 .second-about-block {
     display: flex;
     grid-area: 1 / 2 / 2 / 3;
     flex-direction: column;
-    /* background-color: yellow; */
     font-family: 'Malaga Narrow OT Reg Italic';
 
 }
 
 .about-description {
-    /* font-family: 'Malaga Narrow OT Reg Italic'; */
     font-size: 1.4rem;
     letter-spacing: .07em;
     line-height: 1.2em;
@@ -560,11 +534,17 @@
     margin: 7% 0;
 }
 
+.app-link:hover{
+    transition: .3s;
+    background-color: rgba(10, 10, 10,.6);
+    box-shadow: 0 5px 10px 0 rgb(10, 10, 10);
+    border-radius: 10%;
+}
+
 .app-img{
     display: inline-block;
     width: 9.7em;
     height: auto;
-    /* object-fit: contain; */
 }
 
 .support-section{
@@ -608,38 +588,21 @@
     background: linear-gradient(to bottom right, #6276cd, #616bc0, #5a3b8e, #582c7e);
 }
 
+.upgrade-button:hover{
+    transition: .3s;
+    box-shadow: 0 5px 10px 0 #616bc0;
+}
+
 .donate-button{
     padding: 1em 2em;
     background: linear-gradient(to bottom right, #36bae1, #499ce5, #5a81e9, #5e7bea );
 }
 
-.footer{
-    /* display: grid;
-    grid-template:  */
-}
-.footer-container::before{
-    position: absolute;
-    top: -.5px;
-    left: 0;
-    content: '';
-    display: block;
-    width: 100%;
-    height: .5px;
-    background: rgb(149, 147, 147);
-    z-index: 0;
+.donate-button:hover{
+    transition: .3s;
+    box-shadow: 0 5px 10px 0 #499ce5;
 }
 
-.footer-container::before{
-    position: absolute;
-    top: -.5px;
-    right: 0;
-    content: '';
-    display: block;
-    width: 100%;
-    height: .5px;
-    background: rgb(149, 147, 147);
-    z-index: 0;
-}
 .footer-container{
     position: relative;
     font-size: .7rem;
@@ -648,7 +611,6 @@
     grid-template: 21.8em 12.5em  / 13.5% 23.8% 30% 1fr 1fr;
     width: 77.5%;
     height: 32rem;
-    /* background-color: #36bae1; */
 }
 
 .footer-first-block{
@@ -656,8 +618,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    /* background-color: antiquewhite; */
-
+    border-top: 1px solid rgb(149, 147, 147);
 }
 
 .supporters-span{
@@ -670,10 +631,7 @@
     width: auto;
     height: 4.7rem;
     padding: .3em 0;
-    /* margin-top: -.0em; */
 }
-
-
 
 .footer-info{
     grid-area: 2 / 2 / 3 / 3;
@@ -695,6 +653,10 @@
     font-weight: bold;
     color: black;
     text-decoration: none;
+}
+
+.info-link:hover{
+    color: gray;
 }
 
 .footer-info::before{
@@ -773,4 +735,217 @@
 
 .footer-last-block a:hover{
     color:  rgb(149, 147, 147);
+}
+
+@media (min-width: 1800px) {
+    body{
+        width: 1800px;
+    }
+    html{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1400px){
+    .about-section{
+        background-position: 80% 200%;
+    }
+}
+
+@media  (max-width: 1199px){
+    .menu-main {
+        margin-left: 0;
+    }
+
+    .navigation-menu {
+        justify-content: flex-start;
+        padding-left: 9.5%
+    }
+
+    .intro-section {
+        grid-template: 16em 6em 1em 5.4em 10em 9.8em 2.8em / 9.5% 30.2% 3fr repeat(2, 3fr) 9.5%;
+    }
+
+    .third-section-block {
+        border-right: none;
+    }
+    
+    .advantages:nth-child(2)::after {
+        height: 0em;
+    }
+
+    .partners-img {
+        margin-left: 5%;
+        margin: 2.5% 1.5% 3.1%;
+        object-fit: cover;
+        height: auto;
+        width: 82%;
+    }
+    
+    .about-section-container {
+        margin: 0 19% 0 8.5%;
+        display: grid;
+        grid-template: 10em 1fr / 6% 70% 1fr 2.7%;
+        height: 26.5rem;
+        /* background-color: aqua; */
+    
+    }
+
+    .about-section{
+        background-position: 77% 5%;
+        background-size: 20%;
+        height: 25rem;
+    }
+
+    .about-section::after{
+        display: none;
+    }
+
+    .security-partners{
+        width: 100%;
+    }
+
+    .footer-container{
+        grid-template: 11.8em 15.5em 1fr / 13.5% 23.8% 30% 1fr 1fr;
+        width: 82%;
+        height: 30rem;
+    }
+
+    .info-second-block{
+        grid-area: 2 / 4 / 3 / 6;
+    }
+    
+    .info-third-block{
+        grid-area: 3 / 4 / 4 / 6;
+    }
+
+}
+
+@media (max-width: 767px){
+
+    body{
+        min-width: 366px;
+    }
+
+    .navigation-menu {
+        display: none;
+    }
+
+    .language-selection-container {
+        flex-basis: 60%;
+    }
+
+    .account-buttons-list{
+        padding: 0;
+    }
+
+    .second-section-block {
+        display: none;
+    }
+
+    .intro-section {
+        grid-template: 16em 6em 1em 17.4em 20em 15.8em 2.8em / 1.5% 30.2% 3fr repeat(2, 3fr) 1.5%;
+        margin-bottom: 1em;
+    }
+
+    .fourth-section-block{
+        display: none;
+    }
+    .fifth-section-block {
+        grid-area: 4 / 1 / 6 / 4;
+    }
+
+    .advantages-list {
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .advantage-description {
+        display: flex;
+        padding: 0 5px;
+        align-items: center;
+    }
+
+    .advantages-img {
+        display: none;
+    }
+
+    .advantages {
+        width: 100%;
+    }
+
+    .sixth-section-block {
+        grid-area: 4 / 4 / 6 / 7;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seventh-section-block {
+        grid-area: 6 / 2 / 7 / 6;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 5.25%;
+        z-index: -1;
+    }
+
+    .account-buttons-list{
+        background-image: none;
+    }
+
+    .partners-img{
+        display: none;
+    }
+
+    .about-section{
+        height: 35rem;
+    }
+
+    .about-section-container {
+        margin: 0 2%;
+        grid-template: 15em 1fr / 6% 70% 1fr 2.7%;
+        height: 100%;
+    }
+
+    .about-section{
+        background-position: 90% 10%;
+    }
+
+    .support-tutle {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .support-description {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .support-button {
+        margin: 0 .2em;
+    }
+    .security-partners {
+        display: none;
+    }
+    
+    .company-info {
+        display: none;
+    }
+    .second-footer-border {
+        display: none;
+    }
+
+    .footer-container {
+        grid-template: 8.8em 7.5em 1fr / 13.5% 23.8% 30% 1fr 1fr;
+        width: 90%;
+        height: 18rem;
+    }
+
+    .social-link-container{
+        display: none;
+    }
 }
